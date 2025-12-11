@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bumita Games</title>
+  <meta name="description" content="Bumita Games - Mobile game studio chuyên làm game vui, đẹp và tối ưu cho người chơi." />
+
+  <!-- Link file CSS -->
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="logo-text">
+        <div class="logo-title">Bumita Games</div>
+        <div class="logo-sub">Indie Mobile Game Studio • Vietnam</div>
+      </div>
+      <div class="tag-badge">
+        Crafting fun & polished games
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <h1 class="hero-main-title">Chúng tôi làm game nhỏ, trải nghiệm lớn.</h1>
+          <p class="hero-main-sub">
+            Zeal Games Studio tập trung vào các game mobile có gameplay rõ ràng, dễ tiếp cận,
+            nhưng vẫn đủ chiều sâu để người chơi gắn bó lâu dài.
+          </p>
+
+          <div class="hero-badges">
+            <div class="pill">Puzzle & RPG</div>
+            <div class="pill">Free-to-play</div>
+            <div class="pill">Ad + IAP friendly</div>
+          </div>
+
+          <div class="hero-cta-row">
+            <a href="#games" class="btn-primary">
+              <span class="icon">🎮</span>
+              <span>Xem các dự án game</span>
+            </a>
+            <span class="muted">Đang trong giai đoạn phát triển nội bộ.</span>
+          </div>
+        </div>
+
+        <aside class="hero-right-card">
+          <div class="hero-right-title">Thông tin nhanh</div>
+
+          <div class="hero-right-item">
+            <span class="hero-right-label">Hình thức</span>
+            <span class="hero-right-value">Indie studio</span>
+          </div>
+
+          <div class="hero-right-item">
+            <span class="hero-right-label">Nền tảng</span>
+            <span class="hero-right-value">Android (Google Play)</span>
+          </div>
+          
+        </aside>
+      </section>
+
+      <section class="section" id="games">
+        <div class="section-title-row">
+          <h2 class="section-title">Dự án game</h2>
+          <p class="section-sub">Một số dự án đang phát triển & thử nghiệm.</p>
+        </div>
+
+        <div class="cards-grid">
+          <article class="card">
+            <div class="card-label">Puzzle • Mobile</div>
+            <h3 class="card-title">Jellyfish Puzzle (tên tạm)</h3>
+            <p class="card-desc">
+              Game puzzle chủ đề đại dương, giao diện pastel dễ thương, gameplay merge/câu sứa.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Casual</span>
+              <span class="card-tag">Underwater</span>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-label">RPG • Card combat</div>
+            <h3 class="card-title">Luminary Saga (tên tạm)</h3>
+            <p class="card-desc">
+              Fantasy card-RPG với yếu tố idle/battle, chiến đấu bằng thẻ bài, hạ boss.
+            </p>
+            <div class="card-tags">
+              <span class="card-tag">Fantasy</span>
+              <span class="card-tag">Boss fight</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="section-title-row">
+          <h2 class="section-title">Quan tâm dự án? Liên hệ ngay</h2>
+        </div>
+
+        <div class="card contact-card">
+          <div class="contact-label">Email</div>
+          <div class="contact-row">
+            <div class="contact-pill">
+              nguyenvansinhlg1984@gmail.com
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © <span id="year"></span> Bumita Games. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
