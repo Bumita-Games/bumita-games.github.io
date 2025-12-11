@@ -1,122 +1,235 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
+  <title>Bumita Games – Casual & Puzzle Studio</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bumita Games</title>
-  <meta name="description" content="Bumita Games - Mobile game studio chuyên làm game vui, đẹp và tối ưu cho người chơi." />
+  <meta name="description" content="Bumita Games – small indie studio from Vietnam, creating cozy casual & puzzle games." />
 
-  <!-- Link file CSS -->
-  <link rel="stylesheet" href="./style.css" />
+  <!-- SEO cơ bản -->
+  <meta property="og:title" content="Bumita Games – Casual & Puzzle Studio" />
+  <meta property="og:description" content="Relaxing puzzle & casual games crafted by a small indie team from Vietnam." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://your-domain.com/" />
+  <!-- <meta property="og:image" content="https://your-domain.com/og-image.png" /> -->
+
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="page">
-    <header>
-      <div class="logo-text">
-        <div class="logo-title">Bumita Games</div>
-        <div class="logo-sub">Indie Mobile Game Studio • Vietnam</div>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Bạn có thể đổi thành <img src="assets/logo.png" alt="Bumita Games" /> -->
+        <span class="logo-mark">B</span>
+        <span class="logo-text">Bumita Games</span>
       </div>
-      <div class="tag-badge">
-        Crafting fun & polished games
-      </div>
-    </header>
 
-    <main>
-      <section class="hero">
-        <div>
-          <h1 class="hero-main-title">Chúng tôi làm game nhỏ, trải nghiệm lớn.</h1>
-          <p class="hero-main-sub">
-            Zeal Games Studio tập trung vào các game mobile có gameplay rõ ràng, dễ tiếp cận,
-            nhưng vẫn đủ chiều sâu để người chơi gắn bó lâu dài.
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION VỚI VIDEO NỀN -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-video-wrapper">
+        <!-- Đặt file video của bạn tại: assets/video/jelly-hero.mp4 -->
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="assets/video/jelly-hero.mp4" type="video/mp4" />
+          <!-- Fallback nếu browser không support -->
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-tagline">Indie Puzzle & Casual Games</p>
+          <h1>Jelly Merge Puzzle<br />& Ocean Adventures</h1>
+          <p class="hero-subtitle">
+            Relaxing, colorful and surprisingly strategic puzzle games,
+            crafted with love by a small indie team from Vietnam.
           </p>
 
-          <div class="hero-badges">
-            <div class="pill">Puzzle & RPG</div>
-            <div class="pill">Free-to-play</div>
-            <div class="pill">Ad + IAP friendly</div>
-          </div>
-
-          <div class="hero-cta-row">
-            <a href="#games" class="btn-primary">
-              <span class="icon">🎮</span>
-              <span>Xem các dự án game</span>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary">
+              <span>Wishlist / Download</span>
             </a>
-            <span class="muted">Đang trong giai đoạn phát triển nội bộ.</span>
+            <a href="#games" class="btn btn-ghost">
+              <span>View Our Games</span>
+            </a>
           </div>
         </div>
 
-        <aside class="hero-right-card">
-          <div class="hero-right-title">Thông tin nhanh</div>
-
-          <div class="hero-right-item">
-            <span class="hero-right-label">Hình thức</span>
-            <span class="hero-right-value">Indie studio</span>
-          </div>
-
-          <div class="hero-right-item">
-            <span class="hero-right-label">Nền tảng</span>
-            <span class="hero-right-value">Android (Google Play)</span>
-          </div>
-          
-        </aside>
-      </section>
-
-      <section class="section" id="games">
-        <div class="section-title-row">
-          <h2 class="section-title">Dự án game</h2>
-          <p class="section-sub">Một số dự án đang phát triển & thử nghiệm.</p>
+        <div class="hero-card">
+          <div class="hero-card-label">Featured Game</div>
+          <h2 class="hero-card-title">Jellyfish Merge</h2>
+          <p class="hero-card-text">
+            Match, merge and defeat cute ocean creatures in a cozy underwater world.
+          </p>
+          <ul class="hero-features">
+            <li>🎮 Easy to play, hard to master</li>
+            <li>🌊 Soft pastel ocean vibes</li>
+            <li>🐙 Cute monsters & bosses</li>
+          </ul>
         </div>
+      </div>
+    </section>
 
-        <div class="cards-grid">
-          <article class="card">
-            <div class="card-label">Puzzle • Mobile</div>
-            <h3 class="card-title">Jellyfish Puzzle (tên tạm)</h3>
-            <p class="card-desc">
-              Game puzzle chủ đề đại dương, giao diện pastel dễ thương, gameplay merge/câu sứa.
-            </p>
-            <div class="card-tags">
-              <span class="card-tag">Casual</span>
-              <span class="card-tag">Underwater</span>
+    <!-- GAMES SECTION -->
+    <section id="games" class="section section-games">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Games</h2>
+          <p>Small but passionate. We focus on cozy, satisfying gameplay loops.</p>
+        </header>
+
+        <div class="games-grid">
+          <!-- Game 1 -->
+          <article class="game-card">
+            <div class="game-thumb">
+              <!-- Thay bằng screenshot game -->
+              <div class="thumb-placeholder">GAME COVER</div>
+            </div>
+            <div class="game-body">
+              <h3>Jellyfish Merge</h3>
+              <p>
+                Merge jelly blocks, trigger chain reactions and defeat cute bosses in a
+                relaxing underwater puzzle RPG.
+              </p>
+              <div class="game-tags">
+                <span>Puzzle</span>
+                <span>Merge</span>
+                <span>Casual</span>
+              </div>
+              <a href="#" class="game-link">View game page →</a>
             </div>
           </article>
 
-          <article class="card">
-            <div class="card-label">RPG • Card combat</div>
-            <h3 class="card-title">Luminary Saga (tên tạm)</h3>
-            <p class="card-desc">
-              Fantasy card-RPG với yếu tố idle/battle, chiến đấu bằng thẻ bài, hạ boss.
-            </p>
-            <div class="card-tags">
-              <span class="card-tag">Fantasy</span>
-              <span class="card-tag">Boss fight</span>
+          <!-- Game 2 -->
+          <article class="game-card">
+            <div class="game-thumb">
+              <div class="thumb-placeholder">GAME COVER</div>
+            </div>
+            <div class="game-body">
+              <h3>Luminary Saga (Prototype)</h3>
+              <p>
+                Fantasy RPG with cute chibi characters, card-based combat and strategic
+                monster battles.
+              </p>
+              <div class="game-tags">
+                <span>RPG</span>
+                <span>Fantasy</span>
+                <span>Prototype</span>
+              </div>
+              <a href="#" class="game-link">View game page →</a>
+            </div>
+          </article>
+
+          <!-- Game 3 (optional / coming soon) -->
+          <article class="game-card">
+            <div class="game-thumb">
+              <div class="thumb-placeholder">COMING SOON</div>
+            </div>
+            <div class="game-body">
+              <h3>New Casual Project</h3>
+              <p>
+                We are always experimenting with new casual mechanics and small, polished experiences.
+              </p>
+              <div class="game-tags">
+                <span>Casual</span>
+                <span>Prototype</span>
+              </div>
+              <span class="game-link disabled">Coming soon</span>
             </div>
           </article>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section" id="contact">
-        <div class="section-title-row">
-          <h2 class="section-title">Quan tâm dự án? Liên hệ ngay</h2>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section section-about">
+      <div class="container about-layout">
+        <div class="about-text">
+          <h2>About Bumita Games</h2>
+          <p>
+            Bumita Games is a small indie game studio based in Vietnam.
+            We love creating cozy, colorful and slightly quirky experiences
+            that players can enjoy during short breaks.
+          </p>
+          <p>
+            Our focus is on <strong>puzzle</strong>, <strong>merge</strong> and
+            <strong>casual</strong> gameplay with RPG flavors – simple to
+            start, but with depth for players who stay.
+          </p>
+          <p>
+            We actively experiment, learn and ship. If you are a publisher or
+            partner interested in our projects, feel free to reach out.
+          </p>
+        </div>
+        <div class="about-panel">
+          <h3>What we care about</h3>
+          <ul>
+            <li>✨ Satisfying core game feel</li>
+            <li>🎨 Strong visual identity with soft colors</li>
+            <li>📈 Clear monetization but player-friendly</li>
+            <li>🤝 Long-term collaboration with partners</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact & Business</h2>
+          <p>
+            For publishing, collaboration or general inquiries, feel free to
+            contact us:
+          </p>
+          <p class="contact-email">
+            📧 <a href="mailto:contact@bumita.games">contact@bumita.games</a>
+          </p>
         </div>
 
-        <div class="card contact-card">
-          <div class="contact-label">Email</div>
-          <div class="contact-row">
-            <div class="contact-pill">
-              nguyenvansinhlg1984@gmail.com
-            </div>
-          </div>
+        <div class="contact-links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="https://play.google.com/" target="_blank" rel="noopener">Google Play (coming soon)</a></li>
+            <li><a href="/app-ads.txt" target="_blank" rel="noopener">app-ads.txt</a></li>
+            <li><a href="#" target="_blank" rel="noopener">Privacy Policy</a></li>
+          </ul>
         </div>
-      </section>
-    </main>
-  </div>
+      </div>
+    </section>
+  </main>
 
-  <footer>
-    © <span id="year"></span> Bumita Games. All rights reserved.
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Bumita Games. All rights reserved.</span>
+      <span class="footer-made">Made with ♥ in Vietnam.</span>
+    </div>
   </footer>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
