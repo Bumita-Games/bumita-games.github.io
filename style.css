@@ -84,6 +84,13 @@ body {
   font-weight: 700;
   font-size: 16px;
 }
+.logo-image {
+  width: 28px;
+  height: 28px;
+  border-radius: 10px;
+  display: block;
+  background: radial-gradient(circle at 20% 0, #ff9bd8, #4fd2ff);
+}
 
 .logo-text {
   font-size: 16px;
