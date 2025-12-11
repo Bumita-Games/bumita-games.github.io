@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Bumita Games – Casual & Puzzle Studio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Bumita - small indie studio from Vietnam, creating cozy casual & puzzle games." />
+
+  <!-- SEO cơ bản -->
+  <meta property="og:title" content="Bumita - Casual & Puzzle Studio" />
+  <meta property="og:description" content="Relaxing puzzle & casual games crafted by a small indie team from Vietnam." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://bumita-games.github.io/" />
+  <!-- <meta property="og:image" content="https://your-domain.com/og-image.png" /> -->
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">
+        <!-- Bạn có thể đổi thành <img src="assets/logo.png" alt="Bumita Games" /> -->
+        <img src="assets/logo.png" class="logo-image" />
+        <span class="logo-text">Bumita</span>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#games">Games</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO SECTION VỚI VIDEO NỀN -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-video-wrapper">
+        <!-- Đặt file video của bạn tại: assets/video/jelly-hero.mp4 -->
+        <video
+          class="hero-video"
+          autoplay
+          muted
+          loop
+          playsinline
+        >
+          <source src="assets/video/jelly-hero.mp4" type="video/mp4" />
+          <!-- Fallback nếu browser không support -->
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="hero-overlay"></div>
+      </div>
+
+      <div class="hero-content container">
+        <div class="hero-text">
+          <p class="hero-tagline">Indie Puzzle & Casual Games</p>
+          <h1>Jelly Merge Puzzle<br />& Ocean Adventures</h1>
+          <p class="hero-subtitle">
+            Relaxing, colorful and surprisingly strategic puzzle games,
+            crafted with love by a small indie team from Vietnam.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary">
+              <span>Wishlist / Download</span>
+            </a>
+            <a href="#games" class="btn btn-ghost">
+              <span>View Our Games</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-label">Featured Game</div>
+          <h2 class="hero-card-title">Jellyfish Merge</h2>
+          <p class="hero-card-text">
+            Match, merge and defeat cute ocean creatures in a cozy underwater world.
+          </p>
+          <ul class="hero-features">
+            <li>🎮 Easy to play, hard to master</li>
+            <li>🌊 Soft pastel ocean vibes</li>
+            <li>🐙 Cute monsters & bosses</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- GAMES SECTION -->
+    <section id="games" class="section section-games">
+      <div class="container">
+        <header class="section-header">
+          <h2>Our Games</h2>
+          <p>Small but passionate. We focus on cozy, satisfying gameplay loops.</p>
+        </header>
+
+        <div class="games-grid">
+          <!-- Game 1 -->
+          <article class="game-card">
+            <div class="game-thumb">
+              <!-- Thay bằng screenshot game -->
+              <div class="thumb-placeholder">GAME COVER</div>
+            </div>
+            <div class="game-body">
+              <h3>Block Defense 3D: Drag & Blast!</h3>
+              <p>
+                Merge jelly blocks, trigger chain reactions and defeat cute bosses in a
+                relaxing underwater puzzle RPG.
+              </p>
+              <div class="game-tags">
+                <span>Puzzle</span>
+                <span>Merge</span>
+                <span>Casual</span>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=com.bumita.blockdefense3d" class="game-link">View game page →</a>
+            </div>
+          </article>
+
+          <!-- Game 2 -->
+          <article class="game-card">
+            <div class="game-thumb">
+              <div class="thumb-placeholder">GAME COVER</div>
+            </div>
+            <div class="game-body">
+              <h3>Bixi Fall: Jelly Crash!</h3>
+              <p>
+                Bixi Fall: Jelly Crash! is a relaxing and endlessly playable puzzle game where you break soft jelly blocks to guide Bixi on
+                a gentle fall through a world of color and squishy fun.
+              </p>
+              <div class="game-tags">
+                <span>RPG</span>
+                <span>Fantasy</span>
+                <span>Prototype</span>
+              </div>
+              <a href="https://play.google.com/store/apps/details?id=com.bumita.hexadropper" target="_blank" rel="noopener" class="game-link">View game page →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="section section-about">
+      <div class="container about-layout">
+        <div class="about-text">
+          <h2>About Bumita Games</h2>
+          <p>
+            Bumita Games is a small indie game studio based in Vietnam.
+            We love creating cozy, colorful and slightly quirky experiences
+            that players can enjoy during short breaks.
+          </p>
+          <p>
+            Our focus is on <strong>puzzle</strong>, <strong>merge</strong> and
+            <strong>casual</strong> gameplay with RPG flavors – simple to
+            start, but with depth for players who stay.
+          </p>
+          <p>
+            We actively experiment, learn and ship. If you are a publisher or
+            partner interested in our projects, feel free to reach out.
+          </p>
+        </div>
+        <div class="about-panel">
+          <h3>What we care about</h3>
+          <ul>
+            <li>✨ Satisfying core game feel</li>
+            <li>🎨 Strong visual identity with soft colors</li>
+            <li>📈 Clear monetization but player-friendly</li>
+            <li>🤝 Long-term collaboration with partners</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT / FOOTER SECTION -->
+    <section id="contact" class="section section-contact">
+      <div class="container contact-inner">
+        <div>
+          <h2>Contact & Business</h2>
+          <p>
+            For publishing, collaboration or general inquiries, feel free to
+            contact us:
+          </p>
+          <p class="contact-email">
+            📧 <a href="mailto:contact@bumita.games">nguyenvansinhlg1984@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="contact-links">
+          <h3>Links</h3>
+          <ul>
+            <li><a href="https://play.google.com/" target="_blank" rel="noopener">Google Play</a></li>
+            <li><a href="https://bumita.notion.site/PRIVACY-POLICY-2681845e5c178061af6fdb978c2e93d9" target="_blank" rel="noopener">Privacy Policy</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> Bumita Games. All rights reserved.</span>
+      <span class="footer-made">HCMC, Vietnam</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
