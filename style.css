@@ -362,6 +362,9 @@ body {
 
 .game-body {
   padding: 14px 14px 16px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .game-body h3 {
@@ -375,6 +378,12 @@ body {
   color: var(--text-muted);
 }
 
+.game-body footer
+{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: auto;
+}
 .game-tags {
   display: flex;
   flex-wrap: wrap;
