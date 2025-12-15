@@ -520,6 +520,97 @@ body {
   opacity: 0.8;
 }
 
+/* ==== CONTACT BUTTON ==== */
+.contact-button-wrapper {
+  position: fixed;
+  bottom: 40px;
+  right: 24px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.contact-button {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #ff9bd8, #4fd2ff);
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #041019;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.5);
+}
+
+.contact-button:active {
+  transform: translateY(0);
+}
+
+.contact-label {
+  font-size: 11px;
+  color: var(--text-muted);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  text-align: center;
+}
+
+.contact-menu {
+  position: absolute;
+  bottom: 88px;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  opacity: 0;
+  transform: translateY(10px);
+  pointer-events: none;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.contact-menu.show {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.contact-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: var(--bg-soft);
+  border: 1px solid var(--border-soft);
+  border-radius: 12px;
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+  transition: transform 0.15s ease, background 0.15s ease;
+  min-width: 140px;
+}
+
+.contact-menu-item:hover {
+  transform: translateX(-4px);
+  background: rgba(12, 31, 53, 0.95);
+}
+
+.contact-menu-item svg {
+  flex-shrink: 0;
+}
+
 /* ==== RESPONSIVE ==== */
 @media (max-width: 900px) {
   .hero-content {
@@ -593,4 +684,38 @@ body {
     gap: 6px;
     text-align: center;
   }
+
+  .contact-button-wrapper {
+    bottom: 28px;
+    right: 16px;
+  }
+
+  .contact-button {
+    width: 48px;
+    height: 48px;
+  }
+
+  .contact-label {
+    font-size: 10px;
+  }
+
+  .contact-menu {
+    bottom: 80px;
+  }
+}
+
+/* ==== FACEBOOK MESSENGER CUSTOMER CHAT ==== */
+/* Đảm bảo widget Messenger hiển thị đúng */
+#fb-root {
+  position: relative;
+  z-index: 99;
+}
+
+.fb-customerchat {
+  z-index: 100 !important;
+}
+
+/* Đảm bảo widget không bị che bởi contact button */
+.fb-customerchat iframe {
+  z-index: 100 !important;
 }
