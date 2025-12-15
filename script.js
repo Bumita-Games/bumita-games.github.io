@@ -36,29 +36,3 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     }
   });
 });
-
-// Contact button toggle
-const contactButton = document.getElementById("contactButton");
-const contactMenu = document.getElementById("contactMenu");
-
-if (contactButton && contactMenu) {
-  contactButton.addEventListener("click", (e) => {
-    e.stopPropagation();
-    contactMenu.classList.toggle("show");
-  });
-
-  // Đóng menu khi click bên ngoài
-  document.addEventListener("click", (e) => {
-    if (!contactButton.contains(e.target) && !contactMenu.contains(e.target)) {
-      contactMenu.classList.remove("show");
-    }
-  });
-
-  // Đóng menu khi click vào một item
-  const contactMenuItems = contactMenu.querySelectorAll(".contact-menu-item");
-  contactMenuItems.forEach((item) => {
-    item.addEventListener("click", () => {
-      contactMenu.classList.remove("show");
-    });
-  });
-}

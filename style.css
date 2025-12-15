@@ -684,38 +684,4 @@ body {
     gap: 6px;
     text-align: center;
   }
-
-  .contact-button-wrapper {
-    bottom: 28px;
-    right: 16px;
-  }
-
-  .contact-button {
-    width: 48px;
-    height: 48px;
-  }
-
-  .contact-label {
-    font-size: 10px;
-  }
-
-  .contact-menu {
-    bottom: 80px;
-  }
-}
-
-/* ==== FACEBOOK MESSENGER CUSTOMER CHAT ==== */
-/* Đảm bảo widget Messenger hiển thị đúng */
-#fb-root {
-  position: relative;
-  z-index: 99;
-}
-
-.fb-customerchat {
-  z-index: 100 !important;
-}
-
-/* Đảm bảo widget không bị che bởi contact button */
-.fb-customerchat iframe {
-  z-index: 100 !important;
 }
