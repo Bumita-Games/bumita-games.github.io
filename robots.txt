@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://bumita-games.github.io/sitemap.xml
